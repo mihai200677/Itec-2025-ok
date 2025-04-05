@@ -61,7 +61,8 @@ function Home() {
               <Music2 className="home-feature-icon" />
               <h3 className="home-feature-title">Music Inspired</h3>
               <p className="home-feature-text">
-                Designs influenced by various music genres and cultures
+              Every piece channels the raw energy of urban life—graffiti, concrete, motion—fused with the rhythm, emotion, and attitude of music. 
+              It’s where style meets sound.
               </p>
             </motion.div>
             <motion.div whileHover={{ y: -10 }} className="home-feature-card">
