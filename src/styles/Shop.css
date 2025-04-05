@@ -92,3 +92,22 @@
   .shop-add-to-cart:hover {
     background-color: #6b21a8;
   }
+
+  .dark h1{
+    color:white;
+  }
+
+  .dark .shop-card {
+    background-color: #1f2937; 
+    color: #f9fafb; 
+  }
+
+  .dark .shop-product-name {
+    color: #f9fafb; 
+    background-color: #1f2937;
+  }
+
+  .dark .shop-product-price {
+    color: #e5e7eb;
+    background-color: #1f2937; 
+  }

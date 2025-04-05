@@ -80,6 +80,7 @@
   
   .home-features-text {
     color: #4b5563;
+    background-color: transparent !important;
   }
   
   .home-features-grid {
@@ -95,6 +96,8 @@
   }
   
   .home-feature-card {
+    border: solid 1px #e5e7eb;
+    border-radius: 1.2rem;
     text-align: center;
     padding: 1.5rem;
   }
@@ -114,6 +117,7 @@
   
   .home-feature-text {
     color: #4b5563;
+    background-color: transparent !important;
   }
   
   .home-products {
@@ -184,4 +188,27 @@
   .home-product-price {
     color: #7c3aed;
     font-weight: 500;
+  }
+
+  .dark .home-features,
+  .dark .home-features p{
+    color: rgb(240, 232, 232);
+    background-color: #1f2937;;
+  }
+
+  .dark .home-feature-text p {
+    color: rgba(255, 255, 255, 0.4);
+    
+  }
+
+  .dark .home-products {
+    background-color: #1f2937;;
+  }
+
+  .dark .home-product-info {
+    background-color: #1f2937;;
+  }
+
+  .dark .home-products-text{
+    color:rgb(255, 255, 255) ;
   }

@@ -5,6 +5,13 @@ import { ArrowRight, Music2, Shirt, Globe } from 'lucide-react';
 import '../styles/Home.css';
 
 function Home() {
+  const scrollToSection = (sectionId: string) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <div className="home-container">
       <motion.section
@@ -18,34 +25,38 @@ function Home() {
             backgroundImage: 'url(https://images.pexels.com/photos/1763075/pexels-photo-1763075.jpeg?cs=srgb&dl=pexels-sebastian-ervi-866902-1763075.jpg&fm=jpg)',
           }}
         />
-        <div className="home-hero-content">
-          <motion.h1
-            initial={{ y: -20, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ delay: 0.2 }}
-            className="home-title"
-          >
-            CultureDrop
-          </motion.h1>
-          <motion.p
-            initial={{ y: 20, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ delay: 0.4 }}
-            className="home-subtitle"
-          >
-            Where Music Meets Fashion
-          </motion.p>
-          <motion.div
-            initial={{ y: 20, opacity: 0 }}
-            animate={{ y: 0, opacity: 1 }}
-            transition={{ delay: 0.6 }}
-          >
-            <Link to="/shop" className="home-shop-button">
-              Shop Now
-              <ArrowRight className="home-shop-icon" />
-            </Link>
-          </motion.div>
-        </div>
+        <section id="section1" className="Top_of_page">
+          <div className="home-hero-content">
+            <motion.h1
+              initial={{ y: -20, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ delay: 0.2 }}
+              className="home-title"
+            >
+              <button onClick={() => scrollToSection('section1')}>
+                CultureDrop
+              </button>
+            </motion.h1>
+            <motion.p
+              initial={{ y: 20, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ delay: 0.4 }}
+              className="home-subtitle"
+            >
+              Where Music Meets Fashion
+            </motion.p>
+            <motion.div
+              initial={{ y: 20, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ delay: 0.6 }}
+            >
+              <Link to="/shop" className="home-shop-button">
+                Shop Now
+                <ArrowRight className="home-shop-icon" />
+              </Link>
+            </motion.div>
+          </div>
+        </section>
       </motion.section>
 
       <section className="home-features">
@@ -61,8 +72,8 @@ function Home() {
               <Music2 className="home-feature-icon" />
               <h3 className="home-feature-title">Music Inspired</h3>
               <p className="home-feature-text">
-              Every piece channels the raw energy of urban life—graffiti, concrete, motion—fused with the rhythm, emotion, and attitude of music. 
-              It’s where style meets sound.
+                Every piece channels the raw energy of urban life—graffiti, concrete, motion—fused with the rhythm, emotion, and attitude of music. 
+                It’s where style meets sound.
               </p>
             </motion.div>
             <motion.div whileHover={{ y: -10 }} className="home-feature-card">
@@ -94,19 +105,26 @@ function Home() {
           <div className="home-products-grid">
             {[
               {
+                id: 1,
                 name: 'Urban Beats Hoodie',
-                price: '$89.99',
-                image: 'https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=800&q=80',
+                price: 70.99+"$",
+                image: 'https://kendricklamarstore.com/wp-content/uploads/2025/02/Kendrick-SZA-Merch-Album-Hoodie-768x768.jpg',
+                category: 'Hoodie',
+                
               },
               {
-                name: 'Rhythm Rider Jacket',
-                price: '$129.99',
-                image: 'https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=800&q=80',
+                id: 2,
+                name: 'Kanye West T-shirt (Red Edition)',
+                price: 129.99+"$",
+                image: 'https://kayne-west.b-cdn.net/wp-content/uploads/2021/09/ssrcoclassic_teemensfafafaca443f4786front_altsquare_product600x600-7.jpg',
+                category: 'T-Shirts',
               },
               {
-                name: 'Bass Drop Tee',
-                price: '$34.99',
-                image: 'https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?auto=format&fit=crop&w=800&q=80',
+                id: 3,
+                name: 'Kanye West T-shirt(Black Edition',
+                price: 34.99+"$",
+                image: 'https://i.ibb.co/kWKz9bx/9.jpg',
+                category: 'T-Shirts',
               },
             ].map((product, index) => (
               <motion.div

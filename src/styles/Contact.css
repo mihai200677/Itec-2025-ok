@@ -27,6 +27,39 @@
     display: grid;
     grid-template-columns: 1fr;
     gap: 3rem;
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.221);
+  }
+  
+  .dark .contact-container p,
+  .dark .contact-container h3,
+  .dark .contact-container h1{
+    color: white;
+  }
+
+  .dark .contact-content {
+    color:white;
+    background-color: #34496650;
+  }
+
+  .dark .contact-form {
+    background-color: #34496650;
+  }
+
+  .dark .form-label {
+    color: white;
+
+  }
+
+  .dark .form-input .form-textarea {
+    background-color: #1f2937;
+  }
+
+  .dark .home-products {
+    color: white;
+    background-color: #1f2937;
   }
   
   @media (min-width: 768px) {
@@ -116,3 +149,4 @@
   .form-button:hover {
     background-color: #6b21a8;
   }
+

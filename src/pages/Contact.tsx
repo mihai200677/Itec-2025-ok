@@ -31,7 +31,7 @@ function Contact() {
           Contact Us
         </motion.h1>
         <p className="contact-subtitle">
-          Get in touch with the CultureDrop team
+          Get in touch with the Culture Drop team
         </p>
       </div>
 
@@ -45,7 +45,7 @@ function Contact() {
             <Mail className="contact-icon" />
             <div>
               <h3 className="contact-item-title">Email</h3>
-              <p className="contact-item-text">info@culturedrop.com</p>
+              <p className="contact-item-text">support@culturedrop.ro</p>
             </div>
           </div>
 
@@ -53,7 +53,7 @@ function Contact() {
             <Phone className="contact-icon" />
             <div>
               <h3 className="contact-item-title">Phone</h3>
-              <p className="contact-item-text">+1 (555) 123-4567</p>
+              <p className="contact-item-text">+40 774 028 113</p>
             </div>
           </div>
 
@@ -61,7 +61,7 @@ function Contact() {
             <MapPin className="contact-icon" />
             <div>
               <h3 className="contact-item-title">Location</h3>
-              <p className="contact-item-text">123 Beat Street, Music City</p>
+              <p className="contact-item-text">Bulevardul Vasile Pârvan 4, Timișoara 300223</p>
             </div>
           </div>
         </motion.div>
@@ -107,7 +107,7 @@ function Contact() {
               rows={4}
               value={formState.message}
               onChange={(e) => setFormState({ ...formState, message: e.target.value })}
-              className="form-textarea"
+              className="form-input"
             />
           </div>
 
