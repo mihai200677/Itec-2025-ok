@@ -1,0 +1,124 @@
+.navbar {
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 50;
+  transition: background-color 0.3s;
+}
+
+.navbar.dark {
+  background-color: #1f2937;
+}
+
+.navbar-container {
+  max-width: 112rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.navbar-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4rem;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+}
+
+.navbar-icon {
+  width: 2rem;
+  height: 2rem;
+  color: #7c3aed;
+}
+
+.navbar-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #1f2937;
+}
+
+.navbar-title.dark {
+  color: white;
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.navbar-link {
+  font-size: 1rem;
+  color: #4b5563;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.navbar-link:hover {
+  color: #7c3aed;
+}
+
+.navbar-link.dark {
+  color: #d1d5db;
+}
+
+.navbar-link.dark:hover {
+  color: #a78bfa;
+}
+
+.navbar-theme-toggle {
+  padding: 0.5rem;
+  border-radius: 9999px;
+  background-color: transparent;
+  transition: background-color 0.3s;
+}
+
+.navbar-theme-toggle:hover {
+  background-color: #f3f4f6;
+}
+
+.navbar-theme-toggle.dark:hover {
+  background-color: #374151;
+}
+
+.theme-icon {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.cart-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  color: #4b5563;
+}
+
+.cart-icon.dark {
+  color: #d1d5db;
+}
+
+.cart-count {
+  position: absolute;
+  top: -0.5rem;
+  right: -0.5rem;
+  background-color: #7c3aed;
+  color: white;
+  font-size: 0.75rem;
+  font-weight: bold;
+  width: 1.25rem;
+  height: 1.25rem;
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

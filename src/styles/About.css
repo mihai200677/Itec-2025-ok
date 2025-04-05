@@ -1,0 +1,82 @@
+.about-container {
+    padding-top: 5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    max-width: 112rem;
+    margin: 0 auto;
+  }
+  
+  .about-header {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+  
+  .about-title {
+    font-size: 2.25rem;
+    font-weight: bold;
+    color: #1f2937;
+    margin-bottom: 1rem;
+  }
+  
+  .about-subtitle {
+    font-size: 1.25rem;
+    color: #4b5563;
+  }
+  
+  .about-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    margin-bottom: 4rem;
+  }
+  
+  @media (min-width: 768px) {
+    .about-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  .about-card {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .about-icon {
+    width: 3rem;
+    height: 3rem;
+    color: #7c3aed;
+    margin: 0 auto 1rem;
+  }
+  
+  .about-card-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 0.5rem;
+  }
+  
+  .about-card-text {
+    color: #4b5563;
+  }
+  
+  .about-story {
+    background-color: #ede9fe;
+    border-radius: 0.5rem;
+    padding: 2rem;
+    margin-bottom: 4rem;
+  }
+  
+  .about-story-title {
+    font-size: 1.875rem;
+    font-weight: bold;
+    color: #1f2937;
+    margin-bottom: 1rem;
+  }
+  
+  .about-story-text {
+    color: #374151;
+    margin-bottom: 1rem;
+  }
