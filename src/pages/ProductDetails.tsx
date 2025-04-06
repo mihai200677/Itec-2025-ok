@@ -6,66 +6,89 @@ import { Star, Music, Tag } from 'lucide-react';
 import '../styles/ProductDetails.css'
 const products = {
   1: {
-    name: 'Urban Beats Hoodie',
-    price: 89.99,
+    name: 'Kendrik Lamar Hoodie(Grand National)',
+    price: 59.99.toFixed(2),
     description: 'Premium cotton blend hoodie featuring urban-inspired graphics and comfortable fit.',
-    image: 'https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=800&q=80',
+    image: 'https://kendricklamarstore.com/wp-content/uploads/2025/02/Kendrick-SZA-Merch-Album-Hoodie-768x768.jpg',
     category: 'Streetwear',
     features: ['100% Cotton', 'Relaxed Fit', 'Machine Washable', 'Music-inspired Graphics'],
     rating: 4.5,
     reviews: 128
   },
   2: {
-    name: 'Rhythm Rider Jacket',
-    price: 129.99,
+    name: 'EMINEM Arrest Hooded Sweatshirt',
+    price: 64.99.toFixed(2),
     description: 'Sleek jacket with modern cut and weather-resistant material.',
-    image: 'https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=800&q=80',
+    image: 'https://rockabilia.com/cdn/shop/files/418512F_1024x1024.jpg?v=1701533113',
     category: 'Outerwear',
     features: ['Water Resistant', 'Breathable Fabric', 'Multiple Pockets', 'Adjustable Cuffs'],
     rating: 4.8,
     reviews: 96
   },
   3: {
-    name: 'Bass Drop Tee',
-    price: 34.99,
+    name: 'Streetwear Hoodie - Music Fan Apparel - Rap Merchandise - Rap Concert Apparel',
+    price: 73.50.toFixed(2),
     description: 'Classic t-shirt with music-inspired graphic print.',
-    image: 'https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?auto=format&fit=crop&w=800&q=80',
+    image: 'https://i.etsystatic.com/20701597/r/il/160c7d/6762464595/il_1588xN.6762464595_e4if.jpg',
     category: 'T-Shirts',
     features: ['100% Organic Cotton', 'Regular Fit', 'Screen Printed Design', 'Pre-shrunk'],
     rating: 4.3,
     reviews: 75
   },
   4: {
-    name: 'Vinyl Vibes Cap',
-    price: 29.99,
+    name: 'Kanye West T-shirt (Red Edition Tour 2025 Edition)',
+    price: 45.99.toFixed(2),
     description: 'Adjustable cap with embroidered music-inspired design.',
-    image: 'https://images.unsplash.com/photo-1534215754734-18e55d13e346?auto=format&fit=crop&w=800&q=80',
+    image: 'https://kayne-west.b-cdn.net/wp-content/uploads/2021/09/ssrcoclassic_teemensfafafaca443f4786front_altsquare_product600x600-7.jpg',
     category: 'Accessories',
     features: ['Adjustable Strap', 'Embroidered Design', 'Breathable Mesh', 'One Size Fits Most'],
     rating: 4.6,
     reviews: 52
   },
   5: {
-    name: 'Vinyl Vibes Cap',
-    price: 29.99,
+    name: 'Kanye West T-shirt(Black Edition)',
+    price: 34.99.toFixed(2),
     description: 'Adjustable cap with embroidered music-inspired design.',
-    image: 'https://i.pinimg.com/736x/b5/ac/c5/b5acc58353e13c3a705ff5d535cdf8f4.jpg',
-    category: 'Accessories',
+    image: 'https://i.ibb.co/kWKz9bx/9.jpg',
+    category: 'T-Shirts',
     features: ['Adjustable Strap', 'Embroidered Design', 'Breathable Mesh', 'One Size Fits Most'],
     rating: 4.6,
     reviews: 52
   },
   6: {
-    image: "https://i.pinimg.com/736x/cf/8d/fa/cf8dfaa5552132580111377f4f82e6cf.jpg"
+    name: 'Kendrik Lamar T-Shirt (Grand National Tour 2025 Edition)',
+    price: 29.99.toFixed(2),
+    description: 'Adjustable cap with embroidered music-inspired design.',
+    image: "https://i.pinimg.com/736x/cf/8d/fa/cf8dfaa5552132580111377f4f82e6cf.jpg",
+    category: 'T-Shirts',
   },
   7: {
-    image: "https://kendricklamarstore.com/wp-content/uploads/2025/01/Grand-National-Tour-2025-Hoodie-Kendrick-Lamar-SZA-768x768.jpg",
+    name: '2PAC LA Skyline Kids Tee Childrens T-shirt',
+    price: 29.99.toFixed(2),
+    description: 'Adjustable cap with embroidered music-inspired design.',
+    image: 'https://rockabilia.com/cdn/shop/products/422192F_1024x1024.jpg?v=1654705707',
+    category: 'T-Shirts',
   },
   8: {
-    image: "https://kendricklamarstore.com/wp-content/uploads/2025/02/Kendrick-SZA-Merch-Album-Hoodie-768x768.jpg"
+    name: 'EMINEM Detroit Portrait T-shirt',
+    price: 29.99.toFixed(2),
+    description: 'Adjustable cap with embroidered music-inspired design.',
+    image: 'https://rockabilia.com/cdn/shop/products/140182F_1024x1024.jpg?v=1672981387',
+    category: 'T-Shirts',
   },
-  9: {
-    image: "https://kayne-west.b-cdn.net/wp-content/uploads/2021/09/ssrcoclassic_teemensfafafaca443f4786front_altsquare_product600x600-7.jpg"
+  9: {    
+    name: 'GOLD RING Dollar Sign',
+    price: 929.99.toFixed(2),
+    description: 'Adjustable cap with embroidered music-inspired design.',
+    image: 'https://static-01.daraz.com.bd/p/4c603b2c35a9ad44562172081604eb02.jpg',
+    category: 'Accessories',
+  },
+  10: {
+    name: 'EMINEM Slim Shady Snapback Baseball Cap',
+    price: 20.99.toFixed(2),
+    description: 'Adjustable cap with embroidered music-inspired design.',
+    image: 'https://rockabilia.com/cdn/shop/products/418956F_1024x1024.jpg?v=1654786552',
+    category: 'Accessories',
   }
   
 };

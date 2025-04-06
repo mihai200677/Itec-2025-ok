@@ -83,7 +83,7 @@ function Contact() {
               onChange={(e) => setFormState({ ...formState, name: e.target.value })}
               className="form-input"
             />
-          </div>
+          </div>  
 
           <div className="form-group">
             <label htmlFor="email" className="form-label">

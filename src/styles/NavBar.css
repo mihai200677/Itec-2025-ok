@@ -89,7 +89,7 @@
   background-color: #f3f4f6;
 }
 .dark .theme-toggle:hover {
-  background-color: #1f2937;
+  background-color: rgba(55, 72, 128, 0.395);
 }
 
 .sun-icon {

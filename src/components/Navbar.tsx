@@ -21,7 +21,7 @@ function Navbar() {
           <div className="brand-section">
             <Link to="/" className="brand-link">
               <Music className="brand-icon" />
-              <span className="brand-title">CultureDrop</span>
+              <span className="brand-title">Culture Drop</span>
             </Link>
           </div>
 

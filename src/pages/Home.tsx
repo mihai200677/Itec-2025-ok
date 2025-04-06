@@ -34,7 +34,7 @@ function Home() {
               className="home-title"
             >
               <button onClick={() => scrollToSection('section1')}>
-                CultureDrop
+                Culture Drop
               </button>
             </motion.h1>
             <motion.p
@@ -43,7 +43,7 @@ function Home() {
               transition={{ delay: 0.4 }}
               className="home-subtitle"
             >
-              Where Music Meets Fashion
+              Music and Fashion means everything for us
             </motion.p>
             <motion.div
               initial={{ y: 20, opacity: 0 }}
@@ -106,23 +106,22 @@ function Home() {
             {[
               {
                 id: 1,
-                name: 'Urban Beats Hoodie',
-                price: 70.99+"$",
+                name: 'Kendrik Lamar Hoodie(Grand National)',
+                price: "$"+59.99.toFixed(2),
                 image: 'https://kendricklamarstore.com/wp-content/uploads/2025/02/Kendrick-SZA-Merch-Album-Hoodie-768x768.jpg',
                 category: 'Hoodie',
-                
               },
               {
                 id: 2,
-                name: 'Kanye West T-shirt (Red Edition)',
-                price: 129.99+"$",
+                name: 'Kanye West T-shirt (Red Edition Tour 2025 Edition)',
+                price: "$"+45.99.toFixed(2),
                 image: 'https://kayne-west.b-cdn.net/wp-content/uploads/2021/09/ssrcoclassic_teemensfafafaca443f4786front_altsquare_product600x600-7.jpg',
                 category: 'T-Shirts',
               },
               {
                 id: 3,
-                name: 'Kanye West T-shirt(Black Edition',
-                price: 34.99+"$",
+                name: 'Kanye West T-shirt (Black Edition)',
+                price: "$"+34.99.toFixed(2),
                 image: 'https://i.ibb.co/kWKz9bx/9.jpg',
                 category: 'T-Shirts',
               },
@@ -140,7 +139,7 @@ function Home() {
                   <p className="home-product-price">{product.price}</p>
                 </div>
               </motion.div>
-            ))}
+            ))} 
           </div>
         </div>
       </section>
